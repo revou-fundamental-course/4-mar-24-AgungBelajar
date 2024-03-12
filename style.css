@@ -1,0 +1,101 @@
+/* CSS styles for description container */
+.mukadimah {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.gender-options {
+    display: flex;
+  }
+  
+  .gender-options div {
+    margin-right: 20px; /* Adjust spacing between options */
+  }
+  
+  .gender-options div:last-child {
+    margin-right: 0; /* Remove margin for the last option */
+  }
+
+  .checkbox-custom {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* membuat checkbox bulat */
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .checkbox-custom:checked {
+    background-color: #007bff;
+  }
+  
+  .checkbox-custom:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    visibility: hidden;
+  }
+  
+  .checkbox-custom:checked:after {
+    visibility: visible;
+    background-color: #fff;
+  }
+
+  .bmi-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+/* CSS styles for BMI calculator container */
+.bmi-container {
+    width: 1000px
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-container h2 {
+  margin-bottom: 10px;
+}
+
+.bmi-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bmi-container input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.bmi-container button {
+  width: 200px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.bmi-container button:hover {
+  background-color: #0056b3;
+}
+
+.bmi-container button-reset {
+    background-color: #fff; /* Red color for Reset button */
+  }
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
