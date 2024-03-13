@@ -4,54 +4,54 @@
   font-size: 20px;
 }
 .gender-options {
-    display: flex;
-  }
-  
-  .gender-options div {
-    margin-right: 20px; /* Adjust spacing between options */
-  }
-  
-  .gender-options div:last-child {
-    margin-right: 0; /* Remove margin for the last option */
-  }
+  display: flex;
+}
 
-  .checkbox-custom {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #ccc;
-    border-radius: 50%; /* membuat checkbox bulat */
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  .checkbox-custom:checked {
-    background-color: #007bff;
-  }
-  
-  .checkbox-custom:after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    margin: 4px;
-    border-radius: 50%;
-    background-color: #fff;
-    visibility: hidden;
-  }
-  
-  .checkbox-custom:checked:after {
-    visibility: visible;
-    background-color: #fff;
-  }
+.gender-options div {
+  margin-right: 20px; /* Adjust spacing between options */
+}
 
-  .bmi-container input[type="checkbox"] {
-    margin-right: 5px;
-  }
+.gender-options div:last-child {
+  margin-right: 0; /* Remove margin for the last option */
+}
+
+.checkbox-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%; /* membuat checkbox bulat */
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.checkbox-custom:checked {
+  background-color: #007bff;
+}
+
+.checkbox-custom:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.checkbox-custom:checked:after {
+  visibility: visible;
+  background-color: #fff;
+}
+
+.bmi-container input[type="checkbox"] {
+  margin-right: 5px;
+}
 
 /* CSS styles for BMI calculator container */
 .bmi-container {
-    width: 1000px
+  width: 750px;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
@@ -92,10 +92,63 @@
 }
 
 .bmi-container button-reset {
-    background-color: #fff; /* Red color for Reset button */
-  }
+  background-color: #fff; /* Red color for Reset button */
+}
 
-.result {
+/* CSS styles for result container */
+.result-container {
   margin-top: 20px;
   text-align: center;
+}
+
+.result-box {
+  border: 3px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.result-box {
+  width: 800px;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.resultF {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.resultL {
+  border: 3px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.resultL {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.resultL {
+  width: 800px;
+  padding: 8px;
+  margin-bottom: 50px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.resultD {
+  width: 800px;
 }
